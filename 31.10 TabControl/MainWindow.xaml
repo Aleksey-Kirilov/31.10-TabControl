@@ -1,0 +1,54 @@
+﻿<Window x:Class="_31._10_TabControl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_31._10_TabControl"
+        mc:Ignorable="d"
+        Title="TabControl" Height="450" Width="800">
+    <Grid>
+        <TabControl Margin="30">
+            <TabItem x:Name="Name">
+                <TabItem.Header>
+                    <TextBlock>Name</TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <TextBlock FontSize="20" TextWrapping="Wrap" FontStyle="Italic">Тут могла быть ваша реклама, а вы даже и не задумывались об этом.</TextBlock>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock>Dragon</TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <Image Source="Resource/Dragon.PNG" Height="300" Width="400"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock>Serfer</TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <Image Source="Resource/Serfer.PNG" Height="350" Width="400"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <TextBlock>Kotiq</TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <Image Source="Resource/kotiq.PNG" Height="300"></Image>
+                        <TextBlock FontSize="25" HorizontalAlignment="Center">Eto u menya kotiq</TextBlock>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
